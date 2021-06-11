@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan Name</title>
+    <script src="static/js/script.js"></script>
+    <link rel="shortcut icon" href="static/images/globe-africa-solid.svg">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-light" id="navigation1">
+        <div class="container-fluid" id="navigation">
+          <a class="navbar-brand" href="#">
+            <img src="static/images/globe-africa-solid.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Akan
+          </a>
+        </div>
+    </nav>
+
+    <div class="heading">
+        <h1>Welcome to your Akan name generator</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row" id=enclosure>
+            <div class="col-xl-5" id=introleft>
+                <div class="intro">
+                    <p>In Ghanaian culture, when a baby is born, they are given a cultural name based on the day they were born.
+                        These names give pride to a person and tether them to the community despite the ever changing world we live in.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mennames">
+                            <p>If you are male, the following day names are applicable to you: </p>
+                            <ul class="maleakan">
+                                <li>Sunday: Kwasi</li>
+                                <li>Monday: Kwadwo</li>
+                                <li>Tuesday: Kwabena</li>
+                                <li>Wednesday: Kwaku</li>
+                                <li>Thursday: Yaw</li>
+                                <li>Friday: Kofi</li>
+                                <li>Saturday: Kwame</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="femalenames">
+                            <p>Whereas if you are female, the following names would be given to you: </p>
+                            <ul class="femaleakan">
+                                <li>Sunday: Akosua</li>
+                                <li>Monday: Adwoa</li>
+                                <li>Tuesday: Abenaa</li>
+                                <li>Wednesday: Akua</li>
+                                <li>Thursday: Yaa</li>
+                                <li>Friday: Afua</li>
+                                <li>Saturday: Ama</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="thanks">
+                        <p>Please feel free to try out our web page to identify your Akan name</p>
+                    </div>  
+                    <br>
+                    <h3 id="akanname"></h3>
+                </div>
+            </div>
+            <div class="col-xl-5" id="introright">
+                <div class="dropdowns">
+                    <p>Shown below are three drop down lists. Please select the correct dates and let us do the rest</p>
+                </div>
+                <div class="genselect">
+                    <p>Are you male or female?</p>
+                </div>
+                <div class="genselectradio">
+                    <div class="form-check form-switch" id="maleselector">
+                        <input class="form-check-input" type="checkbox" id="maleselect">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Male</label>
+                    </div>
+                    <div class="form-check form-switch" id="femaleselector">
+                        <input class="form-check-input" type="checkbox" id="femaleselect">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Female</label>
+                    </div>
+                </div>
+                <br>
+                <div class="yob">
+                    <p>What is your birth year? (An example is 1989)</p>
+                    <form class="form-floating" id="yob1">
+                        <input type="number" class="form-control" id="yob">
+                        <label for="floatingInputValue">Year of Birth</label>
+                    </form>
+                </div>
+                <br>
+                <div class="bornmonth">
+                    <p>What month were you born? Input it as a number please. (As an example, input 1 for January)</p>
+                    <form class="form-floating" id="bornmonth1">
+                        <input type="number" class="form-control" id="bornmonth" min="1" max="12">
+                        <label for="floatingInputValue">Month</label>
+                    </form>
+                </div>
+                <br>
+                <div class="bornday">
+                    <p>On what day were you born? the values should range from 1 to 31!</p>
+                    <form class="form-floating" id="bornday1">
+                        <input type="number" class="form-control" id="bornday" min="1" max="31">
+                        <label for="floatingInputValue"></label>
+                    </form>
+                </div>
+                <br>
+                <div class="calcbutton1">
+                    <button type="button" class="btn btn-outline-secondary" id="calcbutton" onclick="return akanName();">Akan me!</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 id="akanname"></h1>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
